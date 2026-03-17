@@ -2,26 +2,36 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/myresearchbvp/ERP-MCDA-Simulation/blob/main/Automated_ERP_PreSelection.ipynb)
 
-## About this Repository
-This repository contains the interactive Python code used for the simulation study in our paper: *"Automated and Explainable MCDA-based ERP Pre-Selection in Simulated Decision Scenarios"*.
+Supplementary Material – Automated and Explainable MCDA-based ERP Pre-Selection
+About this Repository
 
-The code is provided as a supplementary resource to ensure transparency, reproducibility and to demonstrate the practical application of the proposed Decision Support System (DSS) framework.
+This repository contains the interactive simulator created for our study – "Automated and Explainable MCDA-based ERP Pre-Selection in Simulated Decision Scenarios". We uploaded this code so you can verify the results from the article, reproduce them on your own, or see how the system works in a real-world setting.
+What's inside
 
-## What's Inside?
-The Jupyter Notebook (`.ipynb` file) includes the complete logic described in the paper:
-* **Dataset & Weights:** The raw scores for the four anonymized ERP alternatives and the criteria weights for all three scenarios (Baseline, Feasibility-oriented, Growth-oriented).
-* **MCDA Core Logic:** The weighted sum calculations used to determine the rankings and margins.
-* **Visual Profiling:** Radar charts displaying the raw score profiles of the alternatives, and Stacked Bar charts showing exactly how each criterion contributes to the final score.
-* **Automated Explanation:** A natural language generation (NLG) module that outputs clear, text-based justifications for the ranking results.
-* **Interactive Dashboard:** A dynamic UI where you can adjust criteria weights via sliders and immediately see how the ranking and explanations change.
+The main file (.ipynb) is not just a block of code, but an interactive dashboard that includes –
 
-## How to Run the Code
-You do not need to install Python or any libraries on your local machine.
+    Data and scenarios – We already loaded the scores for the 4 ERP systems from the article and the weights for the three analyzed situations (Balanced, Feasibility, or Growth)
 
-1. Click the **"Open in Colab"** badge at the top of this page.
-2. The code will open in a new Google Colab tab.
-3. From the top menu, select **Runtime** > **Run all** (or press `Ctrl+F9`).
-4. Scroll through the document to see the static results, and use the interactive dashboard at the very bottom to test different weighting scenarios.
+    Calculation logic – Everything related to the math behind the rankings and margins
 
-## Peer-Review Note
-This repository was created specifically for the peer-review process. It is maintained under a generic username to strictly preserve double-blind anonymity requirements.
+    Dynamic charts – The ranking changes before your eyes through a bar chart that shows exactly how much each criterion mattered for the final score
+
+    Automated explanations – A module that translates numbers into text and explains clearly why a certain system came out on top
+
+    Extended simulation – You can go beyond the 4 examples in the text; you have the option to add up to 10 different systems and even enter your own scores manually to see the outcome
+
+How to run the application
+
+You don't need to install anything on your computer and you don't need programming skills.
+
+    Click the "Open in Colab" badge above
+
+    The page will open in a new Google Colab tab
+
+    Go to the top menu, click Runtime and select Run all (or press Ctrl+F9)
+
+    Scroll to the bottom of the page where the interactive panel appeared. Play with the sliders to change the importance of the criteria, load the ready-made scenarios, or add your own data
+
+Peer-Review Note
+
+This repository was created specifically for the review process. It is hosted on a generic account to respect the anonymity required by journal standards.
