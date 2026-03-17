@@ -5,7 +5,7 @@
 ## About this Repository
 This repository contains the interactive Python code used for the simulation study in our paper: *"Automated and Explainable MCDA-based ERP Pre-Selection in Simulated Decision Scenarios"*.
 
-The code is provided as a supplementary resource to ensure transparency, reproducibility, and to demonstrate the practical application of the proposed Decision Support System (DSS) framework.
+The code is provided as a supplementary resource to ensure transparency, reproducibility and to demonstrate the practical application of the proposed Decision Support System (DSS) framework.
 
 ## What's Inside?
 The Jupyter Notebook (`.ipynb` file) includes the complete logic described in the paper:
