@@ -31,4 +31,4 @@ You don't need to install anything on your computer and you don't need any progr
 5. Play with the sliders to change the importance of the criteria, load the ready-made scenarios, run the sensitivity analysis or add your own data.
 
 > ### 📝 Peer-review note
-> We created this repository specifically for the review process. It is hosted on a generic account to respect the anonymity required by double-blind journal standards.
+> We created this repository for the review process. 
