@@ -14,7 +14,7 @@ Original file is located at
 based on Colab
 """
 
-# importurile clasice pt data science si ui. nimic fancy, dar ne fac viata mult mai usoara la demo
+# importurile clasice pt data science si UI
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -28,7 +28,7 @@ criteria = ["Functional Coverage", "Feasibility", "Scalability", "Usability", "I
 extended_alts = [f"ERP-{chr(65+i)}" for i in range(10)]
 
 # baza noastra de date simulata. avem 10 erp-uri in spate, dar by default
-# incarcam doar 4 in ui ca sa nu incarcam mintea decidentului cu prea multa info.
+# incarcam doar 4 in ui ca sa nu incarcam decidentul cu prea multa info.
 original_scores = {
     "ERP-A": [5, 3, 4, 4, 4, 5], "ERP-B": [4, 4, 3, 3, 4, 4],
     "ERP-C": [3, 5, 3, 4, 3, 3], "ERP-D": [4, 3, 5, 3, 4, 4]
@@ -46,7 +46,7 @@ presets = {
 presets["S-Avg"] = [round((presets["S1"][i] + presets["S2"][i] + presets["S3"][i]) / 3, 3) for i in range(6)]
 
 # === 2. UI WIDGETS ===
-# definim componentele vizuale. putin boilerplate cod aici, dar arata profi la click pe ele
+# definim componentele vizuale. putin boilerplate cod aici, dar profi la click pe ele
 slider_erps = widgets.IntSlider(value=4, min=2, max=10, description='ERPs:')
 
 sliders_w = [widgets.FloatSlider(value=v, min=0, max=1, step=0.01, description=c,
@@ -106,7 +106,7 @@ def get_consistency(winner, scores_dict):
     else: return "Low (risky, has extreme highs and lows)"
 
 # inima logicii aditive (wsm). se iau ponderile, se inmultesc cu notele, se aduna
-# pura matematica, transparent 100%, fara blackbox si false promisiuni
+# pura matematica, transparent 100%, fara blackbox, fara false promisiuni
 def run_mcda(w, current_scores, alt_list):
     sc, ctb = {}, {}
     for a in alt_list:
