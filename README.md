@@ -1,9 +1,28 @@
 # Supplementary Material – A reproducible and explainable MCDA-based framework for ERP pre-selection in simulated decision scenarios
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/myresearchbvp/ERP-MCDA-Simulation/blob/main/MCDA_ERP_PreSelection_Tool.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/myresearchbvp/ERP-MCDA-Simulation/blob/main/notebooks/MCDA_ERP_PreSelection_Tool.ipynb)
 
 ## 💡 About this repository
 This repository contains the interactive tool created for our study **"A reproducible and explainable MCDA-based framework for ERP pre-selection in simulated decision scenarios"**. We uploaded this code so you can verify the results from the article, reproduce them on your own or simply see how the framework works in an interactive simulated setting.
+
+## 📁 Repository structure
+
+```text
+notebooks/
+  MCDA_ERP_PreSelection_Tool.ipynb
+
+scripts/
+  mcda_erp_preselection_tool.py
+
+docs/
+  ENVIRONMENT.md
+
+requirements.txt
+README.md
+LICENSE
+```
+
+The notebook is the main interactive version intended for Google Colab. The Python script is provided as a plain-code export for inspection, reuse and advanced execution in Colab or Jupyter-like environments. It is not designed as a command-line application.
 
 ## ⚙️ What's inside?
 The main notebook (`.ipynb`) implements an interactive Decision Support System (DSS) dashboard that includes :
@@ -27,8 +46,16 @@ You don't need to install anything on your computer and you don't need any progr
 1. Click the **"Open in Colab"** badge at the top of the repository.
 2. The code will open in a new Google Colab tab.
 3. Go to the top menu, click **Runtime** and select **Run all** (or press `Ctrl+F9`).
-4. Scroll to the bottom of the page where the interactive panel appears. 
+4. Scroll to the bottom of the page where the interactive panel appears.
 5. Play with the sliders to change the importance of the criteria, load the ready-made scenarios, run the sensitivity analysis or add your own data.
 
+## 🧪 Python script
+The file `scripts/mcda_erp_preselection_tool.py` contains a plain Python export of the notebook code. It is useful for code inspection, reuse, adaptation. Because the tool relies on interactive widgets, notebook display functions and Colab download functions, the recommended execution route remains the Colab notebook.
+
+Advanced users may run or adapt the script in a Jupyter-like environment after installing the packages listed in `requirements.txt`. Local execution may require minor changes to the download functions that use `google.colab.files`.
+
+## 🧩 Environment
+The tool was developed for Google Colab. The main dependencies are listed in `requirements.txt`, and additional execution notes are provided in `docs/ENVIRONMENT.md`.
+
 > ### 📝 Peer-review note
-> We created this repository for the review process. 
+> We created this repository for the review process.
