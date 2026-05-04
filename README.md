@@ -14,6 +14,13 @@ docs/
 notebooks/
   MCDA_ERP_PreSelection_Tool.ipynb
 
+sample_outputs/
+  README.md
+  baseline_s1/
+    ERP_Selection_Report_baseline_s1.txt
+    ERP_Raw_Data_baseline_s1.csv
+    ERP_DSS_Charts_baseline_s1_with_sensitivity.png
+
 scripts/
   mcda_erp_preselection_tool.py
 
@@ -53,6 +60,8 @@ You don't need to install anything on your computer and you don't need any progr
 The file `scripts/mcda_erp_preselection_tool.py` contains a plain Python export of the notebook code. It is useful for code inspection, reuse, adaptation. Because the tool relies on interactive widgets, notebook display functions and Colab download functions, the recommended execution route remains the Colab notebook.
 
 Advanced users may run or adapt the script in a Jupyter-like environment after installing the packages listed in `requirements.txt`. Local execution may require minor changes to the download functions that use `google.colab.files`.
+
+The `sample_outputs/` folder contains one baseline export generated from the notebook, so readers can inspect the expected TXT, CSV and PNG outputs without running the tool first.
 
 ## 🧩 Environment
 The tool was developed for Google Colab. The main dependencies are listed in `requirements.txt`, and additional execution notes are provided in `docs/ENVIRONMENT.md`.
