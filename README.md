@@ -57,5 +57,8 @@ Advanced users may run or adapt the script in a Jupyter-like environment after i
 ## 🧩 Environment
 The tool was developed for Google Colab. The main dependencies are listed in `requirements.txt`, and additional execution notes are provided in `docs/ENVIRONMENT.md`.
 
-> ### 📝 Peer-review note
+## 📝 Citation note
+If you use this repository, please cite the associated manuscript once available.
+
+> ### Peer-review note
 > We created this repository for the review process.
