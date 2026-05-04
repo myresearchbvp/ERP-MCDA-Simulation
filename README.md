@@ -34,7 +34,7 @@ The notebook is the main interactive version intended for Google Colab. The Pyth
 ## ⚙️ What's inside?
 The main notebook (`.ipynb`) implements an interactive Decision Support System (DSS) dashboard that includes :
 
-* **Data and scenarios** –> we already pre-loaded the scores for the 4 ERP alternatives analyzed in the article, along with the weights for the three main strategic situations (Baseline, Feasibility, Growth).
+* **Data and scenarios** –> we already pre-loaded the scores for the 4 ERP alternatives analyzed in the article, along with the weights for the three main scenarios (Baseline, Feasibility, Growth).
 * **Consensus mode (S-Avg)** –> a group decision-making feature that calculates the mathematical average of the predefined scenarios to simulate a compromise weighting across different stakeholder priorities.
 * **Advanced analytical metrics** –> the system automatically computes several advanced MCDA (Multi-Criteria Decision Analysis) indicators:
   * *Efficiency to ideal solution (TOPSIS concept)* – measures how close the winning ERP is to a hypothetical ideal alternative.
@@ -61,6 +61,7 @@ The file `scripts/mcda_erp_preselection_tool.py` contains a plain Python export 
 
 Advanced users may run or adapt the script in a Jupyter-like environment after installing the packages listed in `requirements.txt`. Local execution may require minor changes to the download functions that use `google.colab.files`.
 
+## 📦 Sample outputs
 The `sample_outputs/` folder contains one baseline export generated from the notebook, so readers can inspect the expected TXT, CSV and PNG outputs without running the tool first.
 
 ## 🧩 Environment
