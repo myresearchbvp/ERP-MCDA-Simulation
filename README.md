@@ -8,14 +8,14 @@ This repository contains the interactive tool created for our study **"A reprodu
 ## 📁 Repository structure
 
 ```text
+docs/
+  ENVIRONMENT.md
+
 notebooks/
   MCDA_ERP_PreSelection_Tool.ipynb
 
 scripts/
   mcda_erp_preselection_tool.py
-
-docs/
-  ENVIRONMENT.md
 
 requirements.txt
 README.md
